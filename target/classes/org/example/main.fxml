@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="157.0" prefWidth="586.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.MainController">
+   <children>
+      <Label fx:id="label1" text="Test Quiz">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <Label text="Witaj w teście Quiz z programowania, twoim zadaniem będzie odpowiedzenie na 20 pytań. Każde pytanie ma 4 odpowiedzi, ale tylko jedna odpowiedź jest poprawna. Żeby zaliczyć test potrzebujesz zdobyć 50% maksymalnego wyniku czyli 15 punktów. Powodzenia" textAlignment="CENTER" wrapText="true" />
+      <Button fx:id="primaryButton" onAction="#switchToQuestions" text="Rozpocznij" />
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

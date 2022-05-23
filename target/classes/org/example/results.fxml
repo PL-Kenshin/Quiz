@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="369.0" prefWidth="360.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ResultsController">
+    <children>
+        <Label text="Wynik">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font></Label>
+      <HBox alignment="TOP_CENTER" prefHeight="0.0" prefWidth="200.0">
+         <children>
+              <Label text="Uzyskane punkty: " textAlignment="CENTER" />
+            <Label fx:id="userPointsResult" text="\$0" />
+            <Label text="/" />
+            <Label fx:id="maxPointsResult" text="\$0" />
+         </children>
+      </HBox>
+      <Label fx:id="result" text="\$RESULT" />
+      <TableView fx:id="resultsTable" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn prefWidth="75.0" style="-fx-alignment: CENTER;" text="Numer Pytania">
+            <cellValueFactory>
+                <PropertyValueFactory property="questionID" />
+            </cellValueFactory>
+          </TableColumn>
+          <TableColumn prefWidth="64.0" text="Poprawna odpowiedź">
+              <cellValueFactory>
+                  <PropertyValueFactory property="correctAnswer" />
+              </cellValueFactory>
+          </TableColumn>
+            <TableColumn prefWidth="73.0" text="Udzielona odpowiedź">
+                <cellValueFactory>
+                    <PropertyValueFactory property="userAnswer" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="107.0" style="-fx-alignment: CENTER;" text="Uzyskane punkty">
+                <cellValueFactory>
+                    <PropertyValueFactory property="points" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button mnemonicParsing="false" text="Powtórz test" onAction="#restart"/>
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>

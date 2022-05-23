@@ -1,0 +1,23 @@
+ID,QUESTION,ANSWER1,ANSWER2,ANSWER3,ANSWER4,CORRECT_ANSWER,POINTS
+1,"Co oznacza zapis: pom = pom + 1?","Ten zapis nie ma sensu.","Sprawdź, czy wartość zmiennej pom została zwiększona o 1.","Sprawdź, czy wartość zmiennej pom wynosi 1.","Do zmiennej pom dodaj 1.",4,1
+2,"Co oznacza polecenie return w funkcji?","Przekazuje wynik i kończy działanie funkcji.","Oblicza wynik.","Wypisuje wynik na ekranie.","Wykonuje powtórnie treść całej funkcji.",1,1
+3,"Wskaż poprawnie przyporządkowany rodzaj przechowywanej wartości.","liczba całkowita 313","wartość logiczna ""nie""","wartość logiczna Tak","liczba całkowita 3.13",1,1
+4,"Co spowoduje polecenie cout << ""x""?","Wypisanie kodu ASCII litery x.","Wypisanie litery x.","Wypisanie wartości zmiennej x.","Wypisanie zaszyfrowanej litery x szyfrem Cezara z kluczem 1.",2,1
+5,"Co spowoduje polecenie print(""x"")?","Wypisanie litery x.","Wypisanie wartości zmiennej x.","Wypisanie zaszyfrowanej litery x szyfrem Cezara z kluczem 1.","Wypisanie kodu ASCII litery x.",1,1
+6,"Co oznacza komunikat: „SyntaxError: invalid syntax”?","Błąd dzielenia przez 0.","Błąd typu danej.","Użycie zmiennej przed jej deklaracją.","Błąd w składni ciągu znaków lub słów, które powinny po sobie następować.",4,1
+7,"Jaka litera zostanie wypisana po wykonaniu poniższego fragmentu kodu? napis = ""medycyna"";
+cout << napis[2];","d","e","n","m",1,1
+8,"Czym jest inkrementacja?","Zmniejszenie wartości o 1","Zwiększenie wartości o n gdzie n>=2","Zmniejszenie wartości o n, gdzie n>=2","Zwiększenie wartości o 1",4,1
+9,"Która z poniższych instrukcji pozwala wczytać liczbę wprowadzoną z klawiatury i zapisać ją w zmiennej x typu int?","input x;","cin >> x;"," get_integer(&x);","read(x);",2,2
+10,"Ile najwięcej tablic zmiennych typu long long int rozmiaru 1000 × 1000 można umieścić w programie, aby jego
+zużycie pamięci nie przekroczyło 100 MB?","około miliona","żadnej","około dziesięciu","około stu",3,3
+11,"Które z poniższych wyrażeń jest równe x/2 czyli połowie x zaokrąglonej w górę do najbliższej liczby całkowitej?","x / 2","x / 2 + 1","(3 * x + 2) / 6","(x + 1) / 2",4,1
+12,"Która z poniższych liczb zapisanych w systemie dwójkowym jest parzysta?","11100","10011","10001","1111",1,1
+13,"Deklaracja w języku JavaScript: var x=true; powoduje, że zmienna x jest typu","tekstowego (łańcuch)","liczbowego","logicznego","wyliczeniowego",3,2
+14,"Zdarzenie JavaScript, będące reakcją na pojedynczo kliknięty dowolny element strony, nosi nazwę:","onLoad","onKeyDown","onDblClick","onClick",4,1
+15,"W języku skryptowym JavaScript zmienne mogą być deklarowane:","tylko na początku skryptu","tylko jeśli podamy typ zmiennej i jej nazwę","zawsze z poprzedzającym nazwę znakiem $","w momencie pierwszego użycia zmiennej",4,2
+16,"W języku JavaScript poprawnie zadeklarowana zmienna to:","#imie","imie2","imię2","imię%",2,1
+17,"Komentarz w języku JavaScript rozpoczyna się od znaku lub znaków:","<?","//","<!--","#",2,1
+18,"W języku JavaScript metoda document.getElementById(id) ma za zadanie:","wstawić tekst o treści ’id’ na stronie WWW","zwrócić odniesienie do pierwszego elementu HTML o podanym id","pobrać dane z pola formularza i wstawić je do zmiennej id","sprawdzić poprawność formularza o identyfikatorze id",2,2
+19,"W instrukcji warunkowej JavaScript należy sprawdzić przypadek, gdy zmienne a oraz b są dodatnie, z czego zmienna b jest mniejsza od 100. Warunek taki powinien być zapisany w następujący sposób:","if ( a > 0 && b > 0 || b > 100)","if ( a > 0 && b > 0 && b < 100)","if ( a > 0 || b > 0 || b > 100)","if ( a > 0 || (b > 0 && b < 100))",2,3
+20,"W języku JavaScript, aby sprawdzić warunek czy liczba znajduje się w przedziale (100;200>, należy zapisać:","if (liczba < 100 || liczba >= 200)","if (liczba > 100 || liczba <= 200)","if (liczba < 100 && liczba <= 200)","if (liczba > 100 && liczba <= 200)",4,3
