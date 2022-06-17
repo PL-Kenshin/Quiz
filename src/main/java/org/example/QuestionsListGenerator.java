@@ -7,7 +7,7 @@ import java.util.List;
 
 public class QuestionsListGenerator {
 
-    private static final String fileName = "C:\\Users\\Admin\\Desktop\\Programming\\JAVA\\quiz\\src\\main\\resources\\org\\example\\questions.csv";
+    private static final String fileName = System.getProperty("user.dir") + "/src/main/resources/org/example/questions.csv";
     private static List<Question> questionsList;
 
     /**
