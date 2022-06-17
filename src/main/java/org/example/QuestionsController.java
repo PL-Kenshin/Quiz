@@ -27,7 +27,7 @@ public class QuestionsController implements Initializable {
 
     private Integer counter = 0;
 
-    private final String filePath = "C:\\Users\\Admin\\Desktop\\Programming\\JAVA\\quiz\\src\\main\\resources\\org\\example\\userResults.csv";
+    private final String filePath = System.getProperty("user.dir") + "/src/main/resources/org/example/userResults.csv";
 
     /**
      * Method that create new file writer which create new csv file for store data of answered questions.
@@ -81,7 +81,7 @@ public class QuestionsController implements Initializable {
         counter++;
         if(counter < 20) {
             if(counter == 19){
-                secondaryButton.setText("Zakończ test");
+                secondaryButton.setText("ZakoĹ„cz test");
             }
             questionNumber.setText(questionsList.get(counter).getQuestionID().toString());
             description.setText(questionsList.get(counter).getQuestionDescription());
